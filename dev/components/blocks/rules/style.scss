@@ -2,7 +2,9 @@
 
 .rules {
   margin-top: 60px;
-  margin-bottom: 65px;
+  margin-bottom: 120px;
+  position: relative;
+  z-index: 10;
 
   @media only screen and (max-width: 991px) {
     margin-top: 30px;
@@ -55,7 +57,7 @@
   &__items {
     display: none;
     box-shadow: 0 0 60px 0 rgba(0, 218, 178, 0.1);
-    background: #fff;
+    background: #001C3B;
     padding: 24px;
     border-radius: 20px;
 

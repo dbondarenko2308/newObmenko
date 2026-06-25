@@ -2,11 +2,9 @@
 
 .lk {
   position: relative;
-  margin-top: 65px;
   margin-bottom: 65px;
 
   @media only screen and (max-width: 991px) {
-    margin-top: 32px;
   }
 
   &__btn {
@@ -49,6 +47,9 @@
   &__links {
     display: flex;
     align-items: center;
+    backdrop-filter: blur(28.700000762939453px);
+    background: #030826;
+    padding: 5px;
 
     @media only screen and (max-width: 991px) {
       max-width: 100%;
@@ -63,11 +64,9 @@
       width: 100%;
       padding: 6px 24px;
       width: 100%;
-      max-width: 230px;
-      flex-shrink: 0;
       font-weight: 400;
       cursor: pointer;
-      border-radius: 99px;
+      border-radius: 4px;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -80,15 +79,15 @@
 
       &.active {
         background: $base-primery;
-        color: #fff;
+        color: #000;
         font-weight: 600;
       }
     }
   }
 
   &__info {
-    border-radius: 20px;
-    background: #fff;
+    border-radius: 8px;
+    background: #001c3b;
     padding: 24px;
 
     @media only screen and (max-width: 991px) {
@@ -97,12 +96,6 @@
   }
 
   &__content {
-    min-height: 350px;
-
-
-    @media only screen and (max-width: 991px) {
-      min-height: initial;
-    }
     &--item {
       display: none;
 
@@ -129,7 +122,7 @@
 
     &--item {
       padding: 6px 16px;
-      border-radius: 12px;
+      border-radius: 4px;
       cursor: pointer;
       font-weight: 400;
       font-size: 16px;
@@ -141,7 +134,7 @@
 
       &.active {
         background: $base-primery;
-        color: #fff;
+        color: #000;
         font-weight: 600;
         font-size: 16px;
       }
@@ -189,13 +182,8 @@
       .steps-operation__input {
         input {
           height: 43px;
-          border: 1px solid #efefef;
-        }
-
-        &.gray {
-          input {
-            background: #dddddd;
-          }
+          border: 1px solid #242424;
+          border-radius: 2px;
         }
       }
     }
@@ -221,9 +209,8 @@
       justify-content: center;
       flex-direction: column;
       padding-bottom: 30px;
-      background: #fff;
       padding: 40px;
-      border-radius: 12px;
+      border-radius:4px;
 
       span {
         font-size: 12px;
@@ -251,8 +238,8 @@
         border-collapse: collapse;
 
         thead {
-          background: #1c1c1c;
-          color: #fff;
+          background: #fff;
+          color: #000;
 
           tr {
             th {
@@ -272,7 +259,7 @@
         }
 
         tbody {
-          background: #f1f8ff;
+          background: #030826;
           tr {
             &:last-child {
               td {
@@ -297,16 +284,14 @@
   }
 
   &-cash {
-    min-height: 450px;
-
     &__inner {
       padding: 24px;
-      border-radius: 12px;
+      border-radius:4px;
 
       display: flex;
       align-items: center;
       justify-content: space-between;
-      background-color: #f1f8ff;
+      background-color: #0d2f56;
 
       @media only screen and (max-width: 767px) {
         flex-direction: column;
@@ -326,6 +311,7 @@
       .lk-cash {
         &__inner {
           max-width: 656px;
+          background: #030826;
         }
       }
     }
@@ -364,12 +350,6 @@
     &__img {
       display: flex;
       align-items: center;
-
-      svg {
-        path {
-          fill: $base-primery;
-        }
-      }
     }
   }
 
@@ -388,14 +368,13 @@
     }
 
     .steps-operation__input {
-      border: 1px solid #dddddd;
-      border-radius: 10px;
+      border: 1px solid #242424;
+      border-radius: 2px;
     }
   }
 
   &-acc {
     &__inner {
-
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-gap: 16px;
@@ -403,13 +382,10 @@
       @media only screen and (max-width: 991px) {
         grid-template-columns: 1fr;
       }
-    
-
-     
     }
 
     &__item {
-      background: #F1F8FF;
+      background: #030826;
       width: 100%;
       border-radius: 8px;
       padding: 12px 16px;
@@ -441,14 +417,13 @@
     }
 
     &__item {
-      background: #f1f8ff;
+      background: #030826;
       padding: 12px 16px;
-      border-radius: 12px;
+      border-radius:4px;
       display: flex;
       align-items: center;
       justify-content: space-between;
       font-size: 16px;
-      
 
       span {
         opacity: 0.8;
@@ -468,8 +443,8 @@
   &-aside {
     &__top {
       padding: 12px 16px;
-      border-radius: 12px;
-      background: #D2F2FF;
+      border-radius:4px;
+      background: #011E3F;
 
       span {
         font-size: 21px;
@@ -488,9 +463,9 @@
     }
 
     &__item {
-      background: #f1f8ff;
+      background: #030826;
       padding: 12px 16px;
-      border-radius: 12px;
+      border-radius:4px;
       margin-top: 16px;
       font-size: 16px;
     }
@@ -520,9 +495,9 @@
 
   &-dep {
     &__top {
-      background: #f1f8ff;
+      background: #030826;
       padding: 24px;
-      border-radius: 12px;
+      border-radius:4px;
 
       @media only screen and (max-width: 991px) {
         padding: 16px;
@@ -551,7 +526,9 @@
     }
 
     .steps-operation__input input {
-      border: 1px solid #efefef;
+      border: 1px solid #242424;
+      background: #001C3B;
+      border-radius: 2px;
     }
 
     .lk__btn {
@@ -562,7 +539,7 @@
 
   &-faq {
     &__item {
-      background: #f1f8ff;
+      background: #030826;
       padding: 24px;
       margin-bottom: 12px;
       border-radius: 10px;

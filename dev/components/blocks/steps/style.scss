@@ -3,7 +3,7 @@
 .steps {
   position: relative;
   z-index: 1;
-  margin-bottom: 65px;
+  margin-bottom: 90px;
   margin-top: 24px;
 
   &__bg {
@@ -93,7 +93,7 @@
         position: absolute;
         height: 1px;
         width: 69%;
-        background: #888;
+        background: #585858;
         right: -75%;
 
         @media only screen and (max-width: 1300px) {
@@ -102,7 +102,7 @@
         }
 
         @media only screen and (max-width: 991px) {
-          width: 60%;
+          width: 33%;
           right: 10px;
         }
       }
@@ -114,11 +114,12 @@
       align-items: center;
       width: 32px;
       height: 32px;
-      border: 1px solid #9aa1b5;
+      border: 1px solid #585858;
       border-radius: 50px;
       font-size: 14px;
       font-weight: 600;
       position: relative;
+      background: #030826;
       z-index: 1;
 
       position: relative;
@@ -131,19 +132,15 @@
 
       padding-right: 5px;
 
-      @media only screen and (max-width: 991px) {
-        position: relative;
-        z-index: 1;
-        background: #f1f8ff;
-      }
+    
     }
   }
 
   &__items {
     padding: 24px;
-    border-radius: 24px;
+    border-radius: 8px;
     box-shadow: inset -5px 4px 12px 0 rgba(255, 255, 255, 0.25);
-    background: #d2f2ff;
+    background: #001c3b;
 
     @media only screen and (max-width: 991px) {
       padding: 16px;
@@ -179,6 +176,8 @@
 
     &__btn {
       width: fit-content;
+      order: 1;
+      color: #000;
 
       @media only screen and (max-width: 991px) {
         width: 100%;
@@ -216,7 +215,7 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      background: #fff;
+      background: #171820;
       border-radius: 20px;
       padding: 11px 16px;
 
@@ -300,26 +299,24 @@
         padding: 12px 16px;
         width: 100%;
         border: 0;
-        border-radius: 10px;
+        border-radius: 2px;
         font-size: 16px;
         padding-left: 42px;
-        color: #000;
+        color: #fff;
+        background: #171820;
 
-        @media only screen and (max-width: 767px) {
-          height: 40px;
-        }
 
         &::-webkit-input-placeholder {
-          opacity: 0.9;
+          opacity: 0.7;
         }
         &:-moz-placeholder {
-          opacity: 0.9;
+          opacity: 0.7;
         }
         &::-moz-placeholder {
-          opacity: 0.9;
+          opacity: 0.7;
         }
         &:-ms-input-placeholder {
-          opacity: 0.9;
+          opacity: 0.7;
         }
       }
     }
@@ -412,7 +409,7 @@
       b {
         font-size: 14px;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.12);
-        background: #fff;
+        background: #171820;
         border: 1px solid $base-primery;
         border-radius: 12px;
         padding: 6px 12px;
@@ -426,7 +423,7 @@
 
         &.succes {
           background: $base-primery;
-          color: #fff;
+          color: #171820;
           width: auto;
         }
       }
@@ -434,7 +431,7 @@
 
     &__items {
       display: grid;
-      grid-template-columns: 1fr 404px;
+      grid-template-columns: 1fr 288px;
       grid-gap: 1px;
 
       @media only screen and (max-width: 991px) {
@@ -443,10 +440,9 @@
     }
 
     &__item {
-      background: #fff;
-      border-radius: 10px;
+      background: #0D2F56;
+      border-radius: 4px;
       padding: 1.5rem;
-      background: #fff;
       position: relative;
 
       @media only screen and (max-width: 991px) {
@@ -454,7 +450,7 @@
       }
 
       &:last-child {
-        background: #f1f8ff;
+        background: #030826;
 
         @media only screen and (max-width: 991px) {
           min-height: fit-content;
@@ -484,6 +480,8 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-gap: 3px;
+      margin-bottom: 16px;
+      margin-top: 24px;
 
       @media only screen and (max-width: 767px) {
         grid-template-columns: 1fr;
@@ -516,6 +514,12 @@
       align-items: flex-start;
       font-size: 16px;
 
+      span {
+        display: block;
+        margin-bottom: 12px;
+      }
+
+
       @media only screen and (max-width: 991px) {
         font-size: 14px;
       }
@@ -536,6 +540,9 @@
       margin-top: 20px;
       height: 41px;
       width: fit-content;
+      max-width: 176px;
+      width: 100%;
+      color: #000;
 
       @media only screen and (max-width: 991px) {
         height: 29px;
@@ -572,7 +579,7 @@
   }
 
   &-payment {
-    background: #fff;
+    background: #0D2F56;
     padding: 24px;
     border-radius: 20px;
     display: flex;
@@ -602,7 +609,6 @@
       margin-bottom: 24px;
       font-size: 16px;
 
-
       p {
         font-size: 21px;
         font-weight: 600;
@@ -620,7 +626,6 @@
     &__foot {
       font-size: 16px;
 
-
       @media only screen and (max-width: 991px) {
         font-size: 14px;
       }
@@ -634,7 +639,7 @@
 
   &-succes {
     position: relative;
-    background: #fff;
+    background: #0D2F56;
     border-radius: 10px;
     padding: 24px;
 
@@ -711,7 +716,7 @@
       position: relative;
       z-index: 1;
       width: fit-content;
-
+      color: #000;
 
       @media only screen and (max-width: 991px) {
         font-size: 12px;
@@ -726,7 +731,7 @@
     border-radius: 10px;
     padding: 16px 24px;
     margin-top: 24px;
-    background: #fff;
+    background: #001C3B;
 
     b {
       font-weight: 600;

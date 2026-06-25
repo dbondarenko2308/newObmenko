@@ -1,11 +1,9 @@
 .faq {
   position: relative;
-  margin-bottom: 65px;
-  margin-top: 65px;
+  margin-bottom: 89px;
 
   @media only screen and (max-width: 991px) {
-    margin-top: 30px;
-    
+    margin-bottom: 81px;
 
     .steps__bg {
       display: flex;
@@ -18,16 +16,26 @@
   &__content {
     position: relative;
     z-index: 1;
-    background: #fff;
+    box-shadow: inset -5px 4px 12px 0 rgba(255, 255, 255, 0.25);
+    background: #030826;
     padding: 24px;
-    border-radius: 20px;
+    border-radius: 8px;
 
     .lk-faq__item {
-      background: #ECF7FE;
+      background: #001a38;
+      border-radius: 8px;
     }
 
     @media only screen and (max-width: 991px) {
       padding: 16px;
+    }
+
+    .lk-faq__arrow {
+      svg {
+        path {
+          fill: #fff;
+        }
+      }
     }
   }
 }

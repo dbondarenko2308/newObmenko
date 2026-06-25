@@ -1,13 +1,9 @@
 .page-partner {
-  margin-top: 65px;
-  margin-bottom: 65px;
-
+  margin-bottom: 89px;
 
   @media only screen and (max-width: 991px) {
-    margin-top: 30px;
+    margin-bottom: 81px;
   }
-
-
 
   .steps__bg {
     top: 0;
@@ -26,6 +22,7 @@
 
     @media only screen and (max-width: 991px) {
       font-size: 16px;
+      margin-bottom: 32px;
     }
   }
 
@@ -35,14 +32,13 @@
 
   &__item {
     display: grid;
-    grid-template-columns: 48px 1fr;
+    grid-template-columns: 1fr 48px;
     grid-gap: 30px;
     align-items: center;
-    border-radius: 20px;
+    border-radius: 8px;
     padding: 20px 16px;
-    background: #fff;
+    background: #001c3b;
 
-    border-radius: 20px;
     overflow: hidden;
     position: relative;
     margin-bottom: 24px;
@@ -82,6 +78,11 @@
       top: 0;
       width: 171px;
       height: 165px;
+
+
+      @media only screen and (max-width: 991px) {
+        display: none;
+      }
     }
 
     &::after {
@@ -94,6 +95,11 @@
       bottom: 0;
       width: 171px;
       height: 165px;
+
+      @media only screen and (max-width: 991px) {
+        left: -10%;
+        bottom: -10%;
+      }
     }
   }
 
@@ -101,22 +107,28 @@
     flex-shrink: 0;
     display: flex;
     align-items: center;
+
+    order: 1;
+
+    @media only screen and (max-width: 991px) {
+      width: 32px;
+      height: 32px;
+    }
   }
 
   &__warning {
     display: flex;
     align-items: center;
     padding: 24px;
-    background: #fff;
-    box-shadow: 0 6px 21px 0 rgba(0, 0, 0, 0.1);
-    background: #fff;
-    border-radius: 20px;
-
+    border-radius: 8px;
+    padding: 20px 16px;
+    background: #001c3b;
     gap: 10px;
     font-weight: 600;
 
     @media only screen and (max-width: 991px) {
       align-items: flex-start;
+      font-size: 14px;
     }
 
     svg {
